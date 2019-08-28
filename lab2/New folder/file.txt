@@ -1,0 +1,9 @@
+<%
+Dim fs,fSet 
+fs=Server.CreateObject("Scripting.FileSystemObject")
+Set f=fs.GetFile("c:\test.txt")
+f.Write("HEllo")
+Response.Write("File created: " & f.DateCreated)
+set f=nothing 
+set fs=nothing
+%>
