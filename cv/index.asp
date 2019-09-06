@@ -37,10 +37,11 @@
             <%
                 Dim fs, fobj
                 set fs = CreateObject("Scripting.FileSystemObject")
-                set fobj = fs.OpenTextFile("E:\Netcentric Lab\cv\obj.txt",true)
+                set fobj = fs.OpenTextFile("E:\Netcentric Lab\cv\obj.txt",1)
                 Response.write(fobj.ReadAll)
                 fobj.Close
-            
+                set fs=nothing
+                set fobj=nothing
                  %>
             </p>
         </div>
@@ -53,12 +54,13 @@
         <div class="content">
         <p >
               <%
-                Dim fs, fobj1
-                set fs = CreateObject("Scripting.FileSystemObject")
-                set fobj1 = fs.OpenTextFile("E:\Netcentric Lab\cv\exp.txt",true)
+                Dim fs1, fobj1
+                set fs1 = CreateObject("Scripting.FileSystemObject")
+                set fobj1 = fs1.OpenTextFile("E:\Netcentric Lab\cv\exp.txt",1)
                 Response.write(fobj1.ReadAll)
                 fobj1.Close
-            
+                 set fs1=nothing
+                set fobj=nothing
                  %>
 
         </p>
@@ -72,12 +74,13 @@
         <div class="content">
         <p >
               <%
-                Dim fs, fobj2
-                set fs = CreateObject("Scripting.FileSystemObject")
-                set fobj2 = fs.OpenTextFile("E:\Netcentric Lab\cv\skill.txt",true)
+                Dim fs2, fobj2
+                set fs2 = CreateObject("Scripting.FileSystemObject")
+                set fobj2 = fs2.OpenTextFile("E:\Netcentric Lab\cv\skill.txt",1)
                 Response.write(fobj2.ReadAll)
                 fobj2.Close
-            
+                set fs2=nothing
+                set fobj2=nothing
                  %>
 
         </p>
@@ -91,12 +94,13 @@
         <div class="content">
          <p >
               <%
-                Dim fs, fobj3
-                set fs = CreateObject("Scripting.FileSystemObject")
-                set fobj3 = fs.OpenTextFile("E:\Netcentric Lab\cv\edu.txt",true)
+                Dim fs3, fobj3
+                set fs3 = CreateObject("Scripting.FileSystemObject")
+                set fobj3 = fs3.OpenTextFile("E:\Netcentric Lab\cv\edu.txt",1)
                 Response.write(fobj3.ReadAll)
                 fobj3.Close
-            
+                set fs3=nothing
+                set fobj3=nothing
                  %>
 
         </p>
@@ -107,15 +111,16 @@
         %>
       
         </h2>
-        <div>
-         <p >
+        <div class="content">
+         <p  >
               <%
-                Dim fs, fobj4
-                set fs = CreateObject("Scripting.FileSystemObject")
-                set fobj4 = fs.OpenTextFile("E:\Netcentric Lab\cv\personal.txt",true)
+                Dim fs4, fobj4
+                set fs4 = CreateObject("Scripting.FileSystemObject")
+                set fobj4 = fs4.OpenTextFile("E:\Netcentric Lab\cv\personal.txt",1)
                 Response.write(fobj4.ReadAll)
                 fobj4.Close
-            
+                set fs4=nothing
+                set fobj4=nothing
                  %>
 
         </p>
