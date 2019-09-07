@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+.cvbox{
+    width: 700px;
+    margin: 20px auto 40px;
+    box-align: center;
+    
+}
+.info{
+    text-align: right;
+    padding: 0px 0px 10px 0px;
+
+
+}
+h1{
+    font-size: 40px;
+}
+.cvcont{
+    position: relative;
+    top: 10px;
+    font-size:18px;
+    bottom:10px;
+    margin: 0px 0px 20px 0px;
+}
+h2{
+    font-size: 32px;
+    color:rgb(60, 185, 226);
+     
+    
+}
+.content{
+    padding:5px 0px 5px 60px;
+    clear: both;
+font-size:16px;
+}

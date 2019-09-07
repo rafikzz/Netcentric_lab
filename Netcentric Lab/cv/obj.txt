@@ -1,0 +1,4 @@
+<pre>
+I am a highly motivated individual asspiring to be a programmer.
+I want to put my technical skill for programming.
+</pre>

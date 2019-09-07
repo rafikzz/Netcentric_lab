@@ -1,0 +1,23 @@
+
+<head>
+<title>write object</title>
+</head>
+<body>
+<%
+        response.write("starting project")
+        Dim fs, fobj
+        response.write("creating object")
+        set fs = CreateObject("Scripting.FileSystemObject")
+        response.write("opening text file")
+        set fobj = fs.OpenTextFile("E:\Netcentric Lab\lab3\student.txt",true)
+        response.write("rafik")
+        fobj.writeline("Rafik")
+        response.write("maharjan")
+        fobj.writeline("maharjan")
+        response.write("clossing")
+        fobj.Close
+        response.write("closed")
+        set fobj=null
+        set fs=null
+%>
+</body>
